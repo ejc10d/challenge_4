@@ -144,7 +144,7 @@ function addHighScore(){
     }
 
     var playerName = document.getElementById("initials-input").value.toUpperCase();
-    var playerScore = secondsLeft;
+    var playerScore = secondsLeft + secondsLeft;
 
     var player = {
         "name": playerName,
@@ -185,7 +185,7 @@ function endQuiz() {
     pageTitle.textContent = "All Done!";
 
     var quizResult = document.createElement("p");
-    quizResult.textContent = "Your Score: "+secondsLeft;
+    quizResult.textContent = "Your Score: "+ (secondsLeft * 2);
 
     var initialsPropt = document.createElement("p")
     initialsPropt.textContent = "Enter your initials:"
